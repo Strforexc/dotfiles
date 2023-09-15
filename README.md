@@ -1,2 +1,2 @@
-# dotfiles
-My dotfiles
+# Strforexc dotfiles
+My personal configuration files. Add .....
