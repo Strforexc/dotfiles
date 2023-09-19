@@ -1,0 +1,11 @@
+[https]
+	proxy = http://127.0.0.1:7899
+[user]
+	email = 1849442982@qq.com
+	name = Strforexc
+[credential]
+	helper = store
+[color]
+	ui = auto
+[alias]
+    graph = log --all --graph --decorate --oneline
