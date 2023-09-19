@@ -30,7 +30,9 @@ fi
 
 # DIFF-SO-FANCY
 if [[ ! -f $HOME/bin/diff-so-fancy ]]; then
-    curl -o $HOME/bin/diff-so-fancy https://raw.githubusercontent.com/so-fancy/diff-so-fancy/master/third_party/build_fatpack/diff-so-fancy
+    git clone https://github.com/so-fancy/diff-so-fancy.git /tmp/diff-so-fancy
+    cp /tmp/diff-so-fancy/diff-so-fancy $/HOME/bin/diff-so-funcy
+    cp /tmp/diff-so-fancy/lib/DiffHighlight.pm  /etc/perl/DiffHighlight.pm
     chmod +x $HOME/bin/diff-so-fancy
 fi
 
