@@ -42,6 +42,8 @@ alias gu='git pull'
 alias gg='git graph'
 # unalias gd
 alias gd='git diff'
+alias gmt='git commit -m'
+alias gp= 'git push'
 alias gsu='git stash && git pull && git stash pop'
   # Note that gs is also ghostscript
 alias ghostscript="/usr/local/bin/gs"
