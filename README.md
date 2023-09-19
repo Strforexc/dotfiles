@@ -12,6 +12,6 @@ My personal configuration files. Add
 
 
 something else
-- if you don'not good with vim , you can read about https://vimhelp.org/builtin.txt.html
+- if you don'not good with vim , you can read about https://vimhelp.org/builtin.txt.html or https://yianwillis.github.io/vimcdoc/doc/builtin.html 
 - use "verbose nmap [ins]" can find the ins map
 
