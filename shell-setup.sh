@@ -16,7 +16,9 @@ mkdir -p $HOME/bin
 
 # FASD
 if [[ ! -f $HOME/bin/fasd ]]; then
-    git clone https://github.com/clvv/fasd.git /tmp/fasd
+    if [[! -f /tmp/fasd/ ]]; then
+        git clone https://github.com/clvv/fasd.git /tmp/fasd
+    fi
     cd /tmp/fasd
     PREFIX=$HOME make install
     cd -
@@ -24,13 +26,17 @@ fi
 
 # FZF
 if [[ ! -f $HOME/.fzf/bin/fzf ]]; then
-    git clone https://github.com/junegunn/fzf.git $HOME/.fzf
+    if [[ ! -f $HOME/.fzf ]]; then
+        git clone https://github.com/junegunn/fzf.git $HOME/.fzf
+    fi
     yes | $HOME/.fzf/install
 fi
 
 # DIFF-SO-FANCY
 if [[ ! -f $HOME/bin/diff-so-fancy ]]; then
-    git clone https://github.com/so-fancy/diff-so-fancy.git /tmp/diff-so-fancy
+    if [[ ! -f tmp/diff-so-fancy ]]; then
+        git clone https://github.com/so-fancy/diff-so-fancy.git /tmp/diff-so-fancy
+    fi
     cp /tmp/diff-so-fancy/diff-so-fancy $/HOME/bin/diff-so-funcy
     cp /tmp/diff-so-fancy/lib/DiffHighlight.pm  /etc/perl/DiffHighlight.pm
     chmod +x $HOME/bin/diff-so-fancy

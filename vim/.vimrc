@@ -79,6 +79,8 @@ Plug 'christoomey/vim-tmux-navigator'
 " Plug 'ervandew/supertab'
 " Semantic language support
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" Debug python
+Plug 'puremourning/vimspector'         " Debug python
 
 " Syntactic language support
 Plug 'w0rp/ale'                        " Linting engine
@@ -732,7 +734,11 @@ nnoremap <Leader>rv :source ~/.vimrc<CR>
 
 " aw    -- ArgWrap
 nnoremap <Leader>aw :ArgWrap<CR>
-
+" for normal mode modv
+let g:vimspector_enable_mappings='HUMAN'
+nnoremap <Leader>ad <Plug>VimspecturBalloonEval
+" for visual mode
+xmap <Leader>ad <Plug>VimspecturBalloonEval
 
 " numbers
 nnoremap <Leader>1 1gt<CR>
