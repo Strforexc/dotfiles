@@ -16,7 +16,7 @@ mkdir -p $HOME/bin
 
 # FASD
 if [[ ! -f $HOME/bin/fasd ]]; then
-    if [[! -f /tmp/fasd/ ]]; then
+    if [[ ! -f /tmp/fasd/ ]]; then
         git clone https://github.com/clvv/fasd.git /tmp/fasd
     fi
     cd /tmp/fasd
