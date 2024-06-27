@@ -8,7 +8,8 @@ My personal configuration files. Add
 - fd-find,tldr,ripgrep
 - tmux
 - zsh
-
+`./shell-setup.sh` will bootstrap the environment above
+`./setup_all.sh` will link dotfiles using `stow`
 
 
 something else
