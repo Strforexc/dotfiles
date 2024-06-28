@@ -12,6 +12,8 @@ My personal configuration files. Add
 `./shell-setup.sh` will bootstrap the environment above
 `./setup_all.sh` will link dotfiles using `stow`
 
+sudo apt install stow cmake
+
 
 something else
 - if you don'not good with vim , you can read about https://vimhelp.org/builtin.txt.html or https://yianwillis.github.io/vimcdoc/doc/builtin.html 
