@@ -12,7 +12,7 @@ My personal configuration files. Add
 `./shell-setup.sh` will bootstrap the environment above
 `./setup_all.sh` will link dotfiles using `stow`
 
-`sudo apt install stow cmake`
+`sudo apt install stow cmake ninja-build gettext libtool libtool-bin autoconf automake cmake g++ pkg-config unzip`
 
 
 something else
