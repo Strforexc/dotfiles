@@ -58,7 +58,7 @@ if [[ ! -d $HOME/.zprezto ]]; then
 
     setopt EXTENDED_GLOB
     for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/[a-z]*; do
-        ln -s "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
+        ln -sf "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
     done
 fi
 cd $HOME/.zprezto
