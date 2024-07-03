@@ -39,6 +39,7 @@ backup_if_exists ~/.gitconfig
 backup_if_exists ~/.tmux.conf
 backup_if_exists ~/.profile
 backup_if_exists ~/.zshenv
+backup_if_exists ~/.bash_logout
 
 mkdir -p ~/.vim/undodir
 
