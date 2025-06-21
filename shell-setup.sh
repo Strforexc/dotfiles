@@ -108,7 +108,7 @@ fi
 if [[ ! -d $NVIM/node ]]; then
     mkdir -p $NVIM/node
     NODE_SCRIPT=/tmp/install-node.sh
-    curl -sL https://install-node.vercel.app/lts -o $NODE_SCRIPT
+    curl -sL https://raw.githubusercontent.com/vercel/install-node/refs/heads/master/install.sh -o $NODE_SCRIPT
     chmod +x $NODE_SCRIPT
     PREFIX=$NVIM/node $NODE_SCRIPT -y
     PATH="$NVIM/node/bin:$PATH"
