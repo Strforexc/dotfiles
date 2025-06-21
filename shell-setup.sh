@@ -87,7 +87,7 @@ if command -v nvim > /dev/null; then
 else
     mkdir -p $NVIM/bin
     cd $NVIM/bin
-    curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
+    curl -LO https://github.com/neovim/neovim/releases/download/nightly/nvim-linux-x86_64.appimage
     chmod u+x nvim.appimage
     mv nvim.appimage nvim
     cd -
