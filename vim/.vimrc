@@ -480,7 +480,8 @@ set noshowmode
 
 "Conquer of Completion
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-if !exists("*VSCodeNotify") && isdirectory($HOME . "/.vim/plugged/coc.nvim")
+if !exists("*VSCodeNotify") && isdirectory($HOME . "/.local/share/nvim/plugged/coc.nvim")
+
 
     let g:coc_custom_config = '1'
     let g:coc_node_path = $HOME . '/.neovim/node/bin/node'
